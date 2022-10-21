@@ -1,12 +1,9 @@
 //Accordion Logic
-const arrowButtons = document.querySelectorAll(".accordion__chevron");
-const toggleAccordionBoxVisibility = (targetArrow) => {
-  const parentBox = targetArrow.parentElement;
-  console.log(parentBox);
-};
+const boxes = document.querySelectorAll(".accordion__box");
 
-arrowButtons.forEach((button) =>
-  button.addEventListener("click", (e) => {
-    toggleAccordionBoxVisibility(e.target);
+boxes.forEach((box) =>
+  box.addEventListener("click", () => {
+    const content = box.querySelector(".accordion__box-content");
+    content.classList.toggle("hidden");
   })
 );
