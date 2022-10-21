@@ -31,9 +31,12 @@
 }
 
 .accordion__box-content {
-  padding: 16px 32px;
+  padding: 32px;
   overflow: hidden;
-  transition: 500ms;
+  overflow-y: auto;
+  transition: 250ms ease-in;
+  line-height: 1.5;
+  height: 160px;
 }
 
 .hidden {
